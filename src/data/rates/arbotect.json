@@ -1,0 +1,780 @@
+{
+  "Elm": [
+    {
+      "dbh": 10,
+      "product": 10.0,
+      "water": 6.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 11,
+      "product": 13.0,
+      "water": 6.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 12,
+      "product": 14.5,
+      "water": 7.25,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 13,
+      "product": 15.5,
+      "water": 7.75,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 14,
+      "product": 17.0,
+      "water": 8.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 15,
+      "product": 18.0,
+      "water": 9.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 16,
+      "product": 40.0,
+      "water": 20.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 17,
+      "product": 41.0,
+      "water": 21.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 18,
+      "product": 43.0,
+      "water": 21.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 19,
+      "product": 46.0,
+      "water": 23.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 20,
+      "product": 48.0,
+      "water": 24.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 21,
+      "product": 50.0,
+      "water": 25.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 22,
+      "product": 53.0,
+      "water": 26.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 23,
+      "product": 55.0,
+      "water": 28.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 24,
+      "product": 58.0,
+      "water": 29.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 25,
+      "product": 60.0,
+      "water": 30.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 26,
+      "product": 62.0,
+      "water": 31.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 27,
+      "product": 65.0,
+      "water": 32.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 28,
+      "product": 67.0,
+      "water": 33.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 29,
+      "product": 70.0,
+      "water": 35.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 30,
+      "product": 72.0,
+      "water": 36.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 31,
+      "product": 74.0,
+      "water": 37.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 32,
+      "product": 77.0,
+      "water": 38.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 33,
+      "product": 79.0,
+      "water": 39.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 34,
+      "product": 82.0,
+      "water": 41.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 35,
+      "product": 84.0,
+      "water": 42.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 36,
+      "product": 86.0,
+      "water": 43.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 37,
+      "product": 89.0,
+      "water": 44.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 38,
+      "product": 91.0,
+      "water": 45.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 39,
+      "product": 94.0,
+      "water": 47.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 40,
+      "product": 96.0,
+      "water": 48.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 41,
+      "product": 98.0,
+      "water": 49.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 42,
+      "product": 101.0,
+      "water": 50.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 43,
+      "product": 103.0,
+      "water": 51.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 44,
+      "product": 106.0,
+      "water": 53.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 45,
+      "product": 108.0,
+      "water": 54.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 46,
+      "product": 110.0,
+      "water": 55.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 47,
+      "product": 113.0,
+      "water": 56.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 48,
+      "product": 115.0,
+      "water": 57.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 49,
+      "product": 118.0,
+      "water": 59.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 50,
+      "product": 120.0,
+      "water": 60.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    }
+  ],
+  "Sycamore": [
+    {
+      "dbh": 6,
+      "product": 9.6,
+      "water": 2.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 7,
+      "product": 11.2,
+      "water": 3.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 8,
+      "product": 12.8,
+      "water": 3.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 9,
+      "product": 14.4,
+      "water": 4.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 10,
+      "product": 16.0,
+      "water": 4.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 11,
+      "product": 18.0,
+      "water": 4.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 12,
+      "product": 19.0,
+      "water": 5.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 13,
+      "product": 21.0,
+      "water": 5.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 14,
+      "product": 22.0,
+      "water": 5.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 15,
+      "product": 24.0,
+      "water": 6.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 16,
+      "product": 26.0,
+      "water": 6.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 17,
+      "product": 27.0,
+      "water": 7.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 18,
+      "product": 29.0,
+      "water": 7.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 19,
+      "product": 30.0,
+      "water": 7.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 20,
+      "product": 32.0,
+      "water": 8.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 21,
+      "product": 34.0,
+      "water": 8.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 22,
+      "product": 35.0,
+      "water": 9.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 23,
+      "product": 37.0,
+      "water": 9.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 24,
+      "product": 38.0,
+      "water": 9.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 25,
+      "product": 40.0,
+      "water": 10.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 26,
+      "product": 42.0,
+      "water": 10.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 27,
+      "product": 43.0,
+      "water": 11.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 28,
+      "product": 45.0,
+      "water": 11.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 29,
+      "product": 46.0,
+      "water": 11.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 30,
+      "product": 72.0,
+      "water": 18.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 31,
+      "product": 74.0,
+      "water": 18.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 32,
+      "product": 77.0,
+      "water": 19.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 33,
+      "product": 79.0,
+      "water": 20.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 34,
+      "product": 82.0,
+      "water": 20.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 35,
+      "product": 84.0,
+      "water": 21.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 36,
+      "product": 86.0,
+      "water": 21.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 37,
+      "product": 89.0,
+      "water": 22.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 38,
+      "product": 91.0,
+      "water": 23.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 39,
+      "product": 94.0,
+      "water": 23.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 40,
+      "product": 96.0,
+      "water": 24.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 41,
+      "product": 98.0,
+      "water": 24.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 42,
+      "product": 101.0,
+      "water": 25.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 43,
+      "product": 103.0,
+      "water": 26.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 44,
+      "product": 106.0,
+      "water": 26.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 45,
+      "product": 108.0,
+      "water": 27.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 46,
+      "product": 110.0,
+      "water": 27.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 47,
+      "product": 113.0,
+      "water": 28.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 48,
+      "product": 115.0,
+      "water": 29.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 49,
+      "product": 118.0,
+      "water": 29.5,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    },
+    {
+      "dbh": 50,
+      "product": 120.0,
+      "water": 30.0,
+      "units": {
+        "product": "oz",
+        "water": "gal"
+      }
+    }
+  ]
+}

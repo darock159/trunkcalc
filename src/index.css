@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+button, input, select { font-size: 18px; }
+.safe { padding-bottom: env(safe-area-inset-bottom); padding-top: env(safe-area-inset-top); }
+.card { @apply rounded-2xl bg-white shadow ring-1 ring-neutral-200; }
+.input { @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-3; }
+.select { @apply w-full rounded-xl border border-neutral-300 bg-white px-4 py-3; }
+.btn { @apply inline-flex items-center justify-center rounded-xl px-4 py-3 font-medium; }
+.btn-primary { @apply bg-[color:#1F4D33] text-white; }
+.btn-outline { @apply border border-[color:#1F4D33] text-[color:#1F4D33] bg-white; }
+.menu-hitbox { @apply p-2 -m-2 rounded-lg; }
+.fixedbar { @apply fixed inset-x-0 bottom-0 z-20 bg-white/95 backdrop-blur border-t border-neutral-200; }

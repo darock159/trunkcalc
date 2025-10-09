@@ -1,0 +1,192 @@
+[
+  {
+    "dbh": 4,
+    "product": 15,
+    "units": "mL"
+  },
+  {
+    "dbh": 5,
+    "product": 15,
+    "units": "mL"
+  },
+  {
+    "dbh": 6,
+    "product": 20,
+    "units": "mL"
+  },
+  {
+    "dbh": 7,
+    "product": 20,
+    "units": "mL"
+  },
+  {
+    "dbh": 8,
+    "product": 25,
+    "units": "mL"
+  },
+  {
+    "dbh": 9,
+    "product": 30,
+    "units": "mL"
+  },
+  {
+    "dbh": 10,
+    "product": 30,
+    "units": "mL"
+  },
+  {
+    "dbh": 11,
+    "product": 40,
+    "units": "mL"
+  },
+  {
+    "dbh": 12,
+    "product": 40,
+    "units": "mL"
+  },
+  {
+    "dbh": 13,
+    "product": 45,
+    "units": "mL"
+  },
+  {
+    "dbh": 14,
+    "product": 50,
+    "units": "mL"
+  },
+  {
+    "dbh": 15,
+    "product": 60,
+    "units": "mL"
+  },
+  {
+    "dbh": 16,
+    "product": 65,
+    "units": "mL"
+  },
+  {
+    "dbh": 17,
+    "product": 75,
+    "units": "mL"
+  },
+  {
+    "dbh": 18,
+    "product": 80,
+    "units": "mL"
+  },
+  {
+    "dbh": 19,
+    "product": 90,
+    "units": "mL"
+  },
+  {
+    "dbh": 20,
+    "product": 110,
+    "units": "mL"
+  },
+  {
+    "dbh": 21,
+    "product": 120,
+    "units": "mL"
+  },
+  {
+    "dbh": 22,
+    "product": 135,
+    "units": "mL"
+  },
+  {
+    "dbh": 23,
+    "product": 150,
+    "units": "mL"
+  },
+  {
+    "dbh": 24,
+    "product": 155,
+    "units": "mL"
+  },
+  {
+    "dbh": 25,
+    "product": 160,
+    "units": "mL"
+  },
+  {
+    "dbh": 26,
+    "product": 170,
+    "units": "mL"
+  },
+  {
+    "dbh": 27,
+    "product": 180,
+    "units": "mL"
+  },
+  {
+    "dbh": 28,
+    "product": 195,
+    "units": "mL"
+  },
+  {
+    "dbh": 29,
+    "product": 210,
+    "units": "mL"
+  },
+  {
+    "dbh": 30,
+    "product": 225,
+    "units": "mL"
+  },
+  {
+    "dbh": 31,
+    "product": 240,
+    "units": "mL"
+  },
+  {
+    "dbh": 32,
+    "product": 255,
+    "units": "mL"
+  },
+  {
+    "dbh": 33,
+    "product": 270,
+    "units": "mL"
+  },
+  {
+    "dbh": 34,
+    "product": 290,
+    "units": "mL"
+  },
+  {
+    "dbh": 35,
+    "product": 310,
+    "units": "mL"
+  },
+  {
+    "dbh": 36,
+    "product": 325,
+    "units": "mL"
+  },
+  {
+    "dbh": 37,
+    "product": 345,
+    "units": "mL"
+  },
+  {
+    "dbh": 38,
+    "product": 360,
+    "units": "mL"
+  },
+  {
+    "dbh": 39,
+    "product": 380,
+    "units": "mL"
+  },
+  {
+    "dbh": 40,
+    "product": 400,
+    "units": "mL"
+  },
+  {
+    "dbh": ">40",
+    "formula": "10 * dbh",
+    "units": "mL"
+  }
+]
