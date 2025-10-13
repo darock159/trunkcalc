@@ -3,6 +3,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { calculateRate } from "../lib/calculateRate";
 import { rateSourceFor, inferInjection, treeTypes, TreeType } from "../lib/datasets";
+import { treeLabels } from "../lib/datasets";
 import { useAppStore } from "../store/useAppStore";
 import { useEffect } from "react";
 
@@ -81,7 +82,7 @@ export default function Calculator() {
           <button className="btn btn-primary" type="submit">calculate</button>
 
           <select className="select" {...register("treeType")}>
-            {treeTypes.map(t => <option key={t} value={t}>{t}</option>)}
+            {treeTypes.map(t => <option key={t} value={t}>{treeLabels[t] || t}</option>)}
           </select>
         </form>
       </div>

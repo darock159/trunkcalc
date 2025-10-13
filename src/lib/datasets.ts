@@ -18,3 +18,12 @@ export function inferInjection(tree: TreeType): InjectionType {
   if (tree === "Elm" || tree === "Sycamore") return "Arbotect";
   return "Iron";
 }
+
+/** display labels for the tree dropdown, internal values unchanged */
+export const treeLabels: Record<TreeType, string> = {
+  Ash: "Ash",
+  Elm: "Elm",
+  Sycamore: "Sycamore",
+  Oak: "Oak - Iron",
+  Birch: "Birch - Iron"
+};
