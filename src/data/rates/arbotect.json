@@ -371,7 +371,7 @@
     },
     {
       "dbh": 51,
-      "product": 121.2,
+      "product": 122.4,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -380,7 +380,7 @@
     },
     {
       "dbh": 52,
-      "product": 122.4,
+      "product": 124.8,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -389,7 +389,7 @@
     },
     {
       "dbh": 53,
-      "product": 123.6,
+      "product": 127.2,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -398,7 +398,7 @@
     },
     {
       "dbh": 54,
-      "product": 124.8,
+      "product": 129.6,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -407,7 +407,7 @@
     },
     {
       "dbh": 55,
-      "product": 126.0,
+      "product": 132.0,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -416,7 +416,7 @@
     },
     {
       "dbh": 56,
-      "product": 127.2,
+      "product": 134.4,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -425,7 +425,7 @@
     },
     {
       "dbh": 57,
-      "product": 128.4,
+      "product": 136.8,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -434,7 +434,7 @@
     },
     {
       "dbh": 58,
-      "product": 129.6,
+      "product": 139.2,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -443,7 +443,7 @@
     },
     {
       "dbh": 59,
-      "product": 130.8,
+      "product": 141.6,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -452,7 +452,7 @@
     },
     {
       "dbh": 60,
-      "product": 132.0,
+      "product": 144.0,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -461,7 +461,7 @@
     },
     {
       "dbh": 61,
-      "product": 133.2,
+      "product": 146.4,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -470,7 +470,7 @@
     },
     {
       "dbh": 62,
-      "product": 134.4,
+      "product": 148.8,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -479,7 +479,7 @@
     },
     {
       "dbh": 63,
-      "product": 135.6,
+      "product": 151.2,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -488,7 +488,7 @@
     },
     {
       "dbh": 64,
-      "product": 136.8,
+      "product": 153.6,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -497,7 +497,7 @@
     },
     {
       "dbh": 65,
-      "product": 138.0,
+      "product": 156.0,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -506,7 +506,7 @@
     },
     {
       "dbh": 66,
-      "product": 139.2,
+      "product": 158.4,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -515,7 +515,7 @@
     },
     {
       "dbh": 67,
-      "product": 140.4,
+      "product": 160.8,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -524,7 +524,7 @@
     },
     {
       "dbh": 68,
-      "product": 141.6,
+      "product": 163.2,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -533,7 +533,7 @@
     },
     {
       "dbh": 69,
-      "product": 142.8,
+      "product": 165.6,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -542,7 +542,7 @@
     },
     {
       "dbh": 70,
-      "product": 144.0,
+      "product": 168.0,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -551,7 +551,7 @@
     },
     {
       "dbh": 71,
-      "product": 145.2,
+      "product": 170.4,
       "units": {
         "product": "oz",
         "water": "gal"
@@ -560,7 +560,7 @@
     },
     {
       "dbh": 72,
-      "product": 146.4,
+      "product": 172.8,
       "units": {
         "product": "oz",
         "water": "gal"
