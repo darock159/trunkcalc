@@ -119,7 +119,8 @@ function OutputBlock({
   rateSource: "TREE IV" | "ARBOTECT" | "IRON";
   output: any;
 }) {
-  if ("water" in output) {
+    const displayLabel = rateSource === "IRON" ? "Metro PHC Lesco Rate Chart" : rateSource;
+if ("water" in output) {
     if (rateSource === "ARBOTECT") {
       return (
         <div>
@@ -127,7 +128,7 @@ function OutputBlock({
           <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
             {output.product} oz of Arbotect, water {output.water} gal
           </div>
-          <div className="mt-2 text-sm text-neutral-600">{rateSource}</div>
+          <div className="mt-2 text-sm text-neutral-600">{displayLabel}</div>
         </div>
       );
     }
@@ -138,7 +139,7 @@ function OutputBlock({
           <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
             {output.product} oz of Iron, water {output.water} gal
           </div>
-          <div className="mt-2 text-sm text-neutral-600">{rateSource}</div>
+          <div className="mt-2 text-sm text-neutral-600">{displayLabel}</div>
         </div>
       );
     }
@@ -149,7 +150,7 @@ function OutputBlock({
       <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
         {output.product} {output.units}
       </div>
-      <div className="mt-2 text-sm text-neutral-600">{rateSource}</div>
+      <div className="mt-2 text-sm text-neutral-600">{displayLabel}</div>
     </div>
   );
 }
