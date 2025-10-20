@@ -1,0 +1,6 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { useState } from "react";
+export default function MenuSheet() {
+    const [open, setOpen] = useState(false);
+    return (_jsxs("div", { className: "relative", children: [_jsx("button", { "aria-label": "menu", className: "menu-hitbox", onClick: () => setOpen(o => !o), children: _jsxs("svg", { width: "24", height: "24", viewBox: "0 0 24 24", fill: "none", children: [_jsx("circle", { cx: "5", cy: "12", r: "2", fill: "#1F4D33" }), _jsx("circle", { cx: "12", cy: "12", r: "2", fill: "#1F4D33" }), _jsx("circle", { cx: "19", cy: "12", r: "2", fill: "#1F4D33" })] }) }), open ? (_jsxs("div", { className: "absolute right-0 mt-2 w-56 rounded-xl border border-neutral-200 bg-white p-2 shadow", children: [_jsx("div", { className: "px-3 py-2 text-sm text-neutral-600", children: "coming soon" }), _jsx("button", { className: "w-full text-left px-3 py-2 rounded-lg hover:bg-neutral-100", children: "view rate charts" }), _jsx("button", { className: "w-full text-left px-3 py-2 rounded-lg hover:bg-neutral-100", children: "high contrast mode" }), _jsx("button", { className: "w-full text-left px-3 py-2 rounded-lg hover:bg-neutral-100", children: "about" })] })) : null] }));
+}

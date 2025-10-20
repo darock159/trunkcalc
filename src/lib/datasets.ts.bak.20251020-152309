@@ -21,7 +21,7 @@ export function rateSourceFor(tree: TreeType, inj: InjectionType) {
   return "IRON" as const;
 }
 
-// dropdown labels shown in the UI
+// dropdown labels
 export const treeLabels: Record<TreeType, string> = {
   Ash: "Ash",
   Elm: "Elm",

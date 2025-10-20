@@ -1,52 +1,99 @@
-import treeIV from "../data/rates/tree_iv.json";
-import arbotectAll from "../data/rates/arbotect.json";
-import ironAll from "../data/rates/iron.json";
-import { rateSourceFor, TreeType, InjectionType } from "./datasets";
+import arbotect from "../data/rates/arbotect.json";
+import treeiv from "../data/rates/tree_iv.json";
+import iron from "../data/rates/iron.json";
+import oakWilt from "../data/rates/oak_wilt.json";
+import { InjectionType, TreeType } from "./datasets";
 
-type Output =
-  | { dbh: number; product: number; units: string }
-  | { dbh: number; product: number; water: number; units: { product: string; water: string } }
-  | { dbh: number; notRecommended: true; reason: string };
+type Row = any;
+type Source = "TREE IV" | "ARBOTECT" | "IRON" | "ALAMO";
 
-function pickData(treeType: TreeType, injectionType: InjectionType) {
-  const source = rateSourceFor(treeType, injectionType);
-  if (source === "TREE IV") return { source, data: treeIV as any[] };
-  if (source === "ARBOTECT") {
-    const t = treeType === "Sycamore" ? (arbotectAll as any).Sycamore : (arbotectAll as any).Elm;
-    return { source, data: t as any[] };
-  }
-  const t = treeType === "Birch" ? (ironAll as any).Birch : (ironAll as any).Oak;
-  return { source: "IRON" as const, data: t as any[] };
+function selectSet(tree: TreeType, inj: InjectionType): { source: Source, data: Row[] } {
+  if (inj === "Tree IV") return { source: "TREE IV", data: treeiv as any[] };
+  if (inj === "Arbotect") return { source: "ARBOTECT", data: (arbotect as any)[tree] || [] };
+  if (inj === "Oak Wilt") return { source: "ALAMO", data: (oakWilt as any)["Oak - Wilt"] || [] };
+  return { source: "IRON", data: (iron as any)[tree] || [] };
 }
 
-export function calculateRate(dbh: number, treeType: TreeType, injectionType: InjectionType): Output {
+export function calculateRate(dbh: number, treeType: string, injectionType: string) {
   const rounded = Math.round(dbh);
-  const { source, data } = pickData(treeType, injectionType);
-  const numeric = data.filter((d: any) => typeof d.dbh === "number").sort((a: any,b: any)=>a.dbh-b.dbh);
+  const tree = treeType as TreeType;
+  const inj = injectionType as InjectionType;
 
-  if (source === "ARBOTECT" && treeType === "Elm") {
-    const minElm = Math.min(...numeric.map((d: any) => d.dbh));
-    if (rounded < minElm) {
-      return { dbh: rounded, notRecommended: true, reason: "elm under 10 inches is not recommended for arbotect." };
+  const { source, data } = selectSet(tree, inj);
+
+  const rows = (Array.isArray(data) ? data : [])
+    .map((r: any) => ({
+      ...r,
+      _dbh: typeof r.dbh === "number" ? r.dbh : Number(String(r.dbh).replace(/[^0-9.]/g,"") || NaN)
+    }))
+    .filter((r: any) => Number.isFinite(r._dbh))
+    .sort((a: any,b: any) => a._dbh - b._dbh);
+
+  if (inj === "Arbotect" && tree === "Elm" && rounded < 10) {
+    return { dbh: rounded, notRecommended: true, source };
+  }
+
+  const exact = rows.find((r:any) => r._dbh === rounded);
+  if (exact) return shape(source, rounded, exact);
+
+  if (rows.length) {
+    const max = rows[rows.length - 1]._dbh;
+
+    if (rounded <= max) {
+      const lower = rows.filter((r:any) => r._dbh <= rounded).pop();
+      if (lower) return shape(source, rounded, lower);
+    }
+
+    // overflow behaviors
+    if (rounded > max) {
+      if (inj === "Arbotect" && tree === "Sycamore" && rounded > 50) {
+        return { dbh: rounded, product: +(2.4 * rounded).toFixed(1), water: +(30 + 0.5*(rounded-50)).toFixed(1), units: { product: "oz", water: "gal" }, source };
+      }
+      if (inj === "Arbotect" && tree === "Elm" && rounded > 50) {
+        return { dbh: rounded, product: +(1.2 * rounded).toFixed(1), water: 60 + (rounded-50), units: { product: "oz", water: "gal" }, source };
+      }
+      if (inj === "Tree IV" && tree === "Ash") {
+        return { dbh: rounded, product: rounded * 10, units: "mL", source };
+      }
+      if (inj === "Iron" && rounded > 30) {
+        if (tree === "Oak") {
+          return { dbh: rounded, product: +(1.0 * rounded).toFixed(1), water: +((rounded)/4).toFixed(1), units: { product:"oz", water:"gal" }, source };
+        }
+        if (tree === "Birch") {
+          return { dbh: rounded, product: +(1.25 * rounded).toFixed(2), water: +((rounded)/4).toFixed(1), units: { product:"oz", water:"gal" }, source };
+        }
+      }
+      const last = rows[rows.length-1];
+      return shape(source, rounded, last);
     }
   }
 
-  const exact = numeric.find((d: any) => d.dbh === rounded);
-  if (exact) return shape(source, rounded, exact);
-
-  const max = Math.max(...numeric.map((d: any)=>d.dbh));
-  if (rounded > max) {
-    if (source === "TREE IV") return { dbh: rounded, product: rounded * 10, units: "mL" };
-    return shape(source, rounded, numeric[numeric.length-1]);
+  if (inj === "Arbotect" && rounded === 50) {
+    if (tree === "Elm") return { dbh: 50, product: 120, water: 60, units: { product:"oz", water:"gal" }, source };
+    if (tree === "Sycamore") return { dbh: 50, product: 120, water: 30, units: { product:"oz", water:"gal" }, source };
   }
-  let cand = numeric[0];
-  for (const row of numeric) { if (row.dbh <= rounded) cand = row; else break; }
-  return shape(source, rounded, cand);
+
+  return { dbh: rounded, product: 0, units: "", source };
 }
 
-function shape(source: "TREE IV"|"ARBOTECT"|"IRON", dbh: number, row: any): Output {
-  if (source === "ARBOTECT" || (source === "IRON" && row.units?.product)) {
-    return { dbh, product: row.product, water: row.water, units: row.units };
+function shape(source: Source, dbh: number, row: any) {
+  const waterNum = typeof row.water === "number" ? row.water : Number(row.water);
+
+  // Oak Wilt: show range if present
+  if (source === "ALAMO" && (row.productLow != null || row.productHigh != null)) {
+    const out: any = { dbh, units: { product: "oz", water: "gal" }, source };
+    if (row.productLow != null) out.productLow = Number(row.productLow);
+    if (row.productHigh != null) out.productHigh = Number(row.productHigh);
+    if (Number.isFinite(waterNum)) out.water = waterNum;
+    return out;
   }
-  return { dbh, product: row.product, units: row.units ?? "mL" };
+
+  if (source === "TREE IV") {
+    return { dbh, product: Number(row.product) || 0, units: "mL", source };
+  }
+
+  const prod = row.product ?? row.oz ?? row.amount ?? 0;
+  const out: any = { dbh, product: Number(prod) || 0, units: { product: "oz", water: "gal" }, source };
+  if (Number.isFinite(waterNum)) out.water = waterNum;
+  return out;
 }

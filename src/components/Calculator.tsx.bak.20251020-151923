@@ -2,12 +2,13 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { calculateRate } from "../lib/calculateRate";
-import { rateSourceFor, inferInjection, treeTypes, TreeType, treeLabels } from "../lib/datasets";
+import { rateSourceFor, inferInjection, treeTypes, TreeType } from "../lib/datasets";
+import { treeLabels } from "../lib/datasets";
 import { useAppStore } from "../store/useAppStore";
 import { useEffect } from "react";
 
 const schema = z.object({
-  treeType: z.enum(["Ash","Elm","Sycamore","Oak","Birch","Oak - Wilt"]),
+  treeType: z.enum(["Ash","Elm","Sycamore","Oak","Birch"]),
   dbh: z
     .string()
     .min(1, "required")
@@ -115,34 +116,11 @@ function OutputBlock({
   dbh, rateSource, output
 }: {
   dbh: number;
-  rateSource: "TREE IV" | "ARBOTECT" | "IRON" | "ALAMO";
+  rateSource: "TREE IV" | "ARBOTECT" | "IRON";
   output: any;
 }) {
-  // special footer wording for iron
-  const displayLabel = rateSource === "IRON" ? "Metro PHC Lesco Rate Chart" : rateSource;
-
-  // oak wilt (alamo), product in mL, water in gal
-  if (rateSource === "ALAMO") {
-    const low = (output?.productLow ?? null);
-    const high = (output?.productHigh ?? null);
-    const water = (output?.water ?? null);
-    const showLow = low == null ? "n/a" : low;
-    const showHigh = high == null ? "n/a" : high;
-    const showWater = water == null ? "n/a" : water;
-    const footer = "Alamo Fungicide - Propiconazole 14.3%";
-    return (
-      <div>
-        <div className="text-2xl font-semibold">dbh {dbh} in</div>
-        <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
-          {showLow} mL ({showHigh} mL HIGH), Water {showWater} gal
-        </div>
-        <div className="mt-2 text-sm text-neutral-600">{footer}</div>
-      </div>
-    );
-  }
-
-  // arbotect and iron branches
-  if ("water" in (output ?? {})) {
+    const displayLabel = rateSource === "IRON" ? "Metro PHC Lesco Rate Chart" : rateSource;
+if ("water" in output) {
     if (rateSource === "ARBOTECT") {
       return (
         <div>
@@ -166,8 +144,6 @@ function OutputBlock({
       );
     }
   }
-
-  // tree iv fallback
   return (
     <div>
       <div className="text-2xl font-semibold">dbh {dbh} in</div>
