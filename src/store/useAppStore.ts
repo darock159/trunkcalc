@@ -10,7 +10,7 @@ export type Output =
 export type ResultRecord = {
   input: { treeType: TreeType; injectionType: InjectionType; dbhOriginal: number; dbhUnit: "in" | "cm"; dbhRoundedInches: number; };
   output: Output;
-  rateSource: "TREE IV" | "ARBOTECT" | "IRON";
+  rateSource: "TREE IV" | "ARBOTECT" | "IRON" | "ALAMO" | "ALAMO";
 };
 
 type Store = {

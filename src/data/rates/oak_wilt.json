@@ -1,0 +1,604 @@
+{
+  "Oak - Wilt": [
+    {
+      "dbh": 1,
+      "productLow": 10,
+      "productHigh": 20,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 0.2
+    },
+    {
+      "dbh": 2,
+      "productLow": 20,
+      "productHigh": 40,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 0.4
+    },
+    {
+      "dbh": 3,
+      "productLow": 30,
+      "productHigh": 60,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 0.6
+    },
+    {
+      "dbh": 4,
+      "productLow": 40,
+      "productHigh": 80,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 0.8
+    },
+    {
+      "dbh": 5,
+      "productLow": 50,
+      "productHigh": 100,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 1
+    },
+    {
+      "dbh": 6,
+      "productLow": 60,
+      "productHigh": 120,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 1.2
+    },
+    {
+      "dbh": 7,
+      "productLow": 70,
+      "productHigh": 140,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 1.4
+    },
+    {
+      "dbh": 8,
+      "productLow": 80,
+      "productHigh": 160,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 1.6
+    },
+    {
+      "dbh": 9,
+      "productLow": 90,
+      "productHigh": 180,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 1.8
+    },
+    {
+      "dbh": 10,
+      "productLow": 100,
+      "productHigh": 200,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 2
+    },
+    {
+      "dbh": 11,
+      "productLow": 110,
+      "productHigh": 220,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 2.2
+    },
+    {
+      "dbh": 12,
+      "productLow": 120,
+      "productHigh": 240,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 2.4
+    },
+    {
+      "dbh": 13,
+      "productLow": 130,
+      "productHigh": 260,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 2.6
+    },
+    {
+      "dbh": 14,
+      "productLow": 140,
+      "productHigh": 280,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 2.8
+    },
+    {
+      "dbh": 15,
+      "productLow": 150,
+      "productHigh": 300,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 3
+    },
+    {
+      "dbh": 16,
+      "productLow": 160,
+      "productHigh": 320,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 3.2
+    },
+    {
+      "dbh": 17,
+      "productLow": 170,
+      "productHigh": 340,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 3.4
+    },
+    {
+      "dbh": 18,
+      "productLow": 180,
+      "productHigh": 360,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 3.6
+    },
+    {
+      "dbh": 19,
+      "productLow": 190,
+      "productHigh": 380,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 3.8
+    },
+    {
+      "dbh": 20,
+      "productLow": 200,
+      "productHigh": 400,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 4
+    },
+    {
+      "dbh": 21,
+      "productLow": 210,
+      "productHigh": 420,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 4.2
+    },
+    {
+      "dbh": 22,
+      "productLow": 220,
+      "productHigh": 440,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 4.4
+    },
+    {
+      "dbh": 23,
+      "productLow": 230,
+      "productHigh": 460,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 4.6
+    },
+    {
+      "dbh": 24,
+      "productLow": 240,
+      "productHigh": 480,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 4.8
+    },
+    {
+      "dbh": 25,
+      "productLow": 250,
+      "productHigh": 500,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 5
+    },
+    {
+      "dbh": 26,
+      "productLow": 260,
+      "productHigh": 520,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 5.2
+    },
+    {
+      "dbh": 27,
+      "productLow": 270,
+      "productHigh": 540,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 5.4
+    },
+    {
+      "dbh": 28,
+      "productLow": 280,
+      "productHigh": 560,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 5.6
+    },
+    {
+      "dbh": 29,
+      "productLow": 290,
+      "productHigh": 580,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 5.8
+    },
+    {
+      "dbh": 30,
+      "productLow": 300,
+      "productHigh": 600,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 6
+    },
+    {
+      "dbh": 31,
+      "productLow": 310,
+      "productHigh": 620,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 6.2
+    },
+    {
+      "dbh": 32,
+      "productLow": 320,
+      "productHigh": 640,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 6.4
+    },
+    {
+      "dbh": 33,
+      "productLow": 330,
+      "productHigh": 660,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 6.6
+    },
+    {
+      "dbh": 34,
+      "productLow": 340,
+      "productHigh": 680,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 6.8
+    },
+    {
+      "dbh": 35,
+      "productLow": 350,
+      "productHigh": 700,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 7
+    },
+    {
+      "dbh": 36,
+      "productLow": 360,
+      "productHigh": 720,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 7.2
+    },
+    {
+      "dbh": 37,
+      "productLow": 370,
+      "productHigh": 740,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 7.4
+    },
+    {
+      "dbh": 38,
+      "productLow": 380,
+      "productHigh": 760,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 7.6
+    },
+    {
+      "dbh": 39,
+      "productLow": 390,
+      "productHigh": 780,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 7.8
+    },
+    {
+      "dbh": 40,
+      "productLow": 400,
+      "productHigh": 800,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 8
+    },
+    {
+      "dbh": 41,
+      "productLow": 410,
+      "productHigh": 820,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 8.2
+    },
+    {
+      "dbh": 42,
+      "productLow": 420,
+      "productHigh": 840,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 8.4
+    },
+    {
+      "dbh": 43,
+      "productLow": 430,
+      "productHigh": 860,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 8.6
+    },
+    {
+      "dbh": 44,
+      "productLow": 440,
+      "productHigh": 880,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 8.8
+    },
+    {
+      "dbh": 45,
+      "productLow": 450,
+      "productHigh": 900,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 9
+    },
+    {
+      "dbh": 46,
+      "productLow": 460,
+      "productHigh": 920,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 9.2
+    },
+    {
+      "dbh": 47,
+      "productLow": 470,
+      "productHigh": 940,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 9.4
+    },
+    {
+      "dbh": 48,
+      "productLow": 480,
+      "productHigh": 960,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 9.6
+    },
+    {
+      "dbh": 49,
+      "productLow": 490,
+      "productHigh": 980,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 9.8
+    },
+    {
+      "dbh": 50,
+      "productLow": 500,
+      "productHigh": 1000,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 10
+    },
+    {
+      "dbh": 51,
+      "productLow": 510,
+      "productHigh": 1020,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 10.2
+    },
+    {
+      "dbh": 52,
+      "productLow": 520,
+      "productHigh": 1040,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 10.4
+    },
+    {
+      "dbh": 53,
+      "productLow": 530,
+      "productHigh": 1060,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 10.6
+    },
+    {
+      "dbh": 54,
+      "productLow": 540,
+      "productHigh": 1080,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 10.8
+    },
+    {
+      "dbh": 55,
+      "productLow": 550,
+      "productHigh": 1100,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 11
+    },
+    {
+      "dbh": 56,
+      "productLow": 560,
+      "productHigh": 1120,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 11.2
+    },
+    {
+      "dbh": 57,
+      "productLow": 570,
+      "productHigh": 1140,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 11.4
+    },
+    {
+      "dbh": 58,
+      "productLow": 580,
+      "productHigh": 1160,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 11.6
+    },
+    {
+      "dbh": 59,
+      "productLow": 590,
+      "productHigh": 1180,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 11.8
+    },
+    {
+      "dbh": 60,
+      "productLow": 600,
+      "productHigh": 1200,
+      "units": {
+        "product": "mL",
+        "water": "gal"
+      },
+      "water": 12
+    }
+  ]
+}

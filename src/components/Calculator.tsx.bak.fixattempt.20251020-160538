@@ -2,12 +2,13 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { calculateRate } from "../lib/calculateRate";
-import { rateSourceFor, inferInjection, treeTypes, TreeType, treeLabels } from "../lib/datasets";
+import { rateSourceFor, inferInjection, treeTypes, TreeType } from "../lib/datasets";
+import { treeLabels } from "../lib/datasets";
 import { useAppStore } from "../store/useAppStore";
 import { useEffect } from "react";
 
 const schema = z.object({
-  treeType: z.enum(["Ash","Elm","Sycamore","Oak","Birch","Oak - Wilt"]),
+  treeType: z.enum(["Ash","Elm","Sycamore","Oak","Birch"]),
   dbh: z
     .string()
     .min(1, "required")
@@ -39,7 +40,8 @@ export default function Calculator() {
     const inj = inferInjection(tree);
     const source = rateSourceFor(tree, inj);
     const out = calculateRate(rounded, tree, inj);
-    setResult({
+    console.log("DBG submit", { tree, inj, source, out });
+setResult({
       input: { treeType: tree, injectionType: inj, dbhOriginal: rounded, dbhUnit: "in", dbhRoundedInches: rounded },
       output: out, rateSource: source
     });
@@ -118,7 +120,7 @@ function OutputBlock({
   rateSource: "TREE IV" | "ARBOTECT" | "IRON" | "ALAMO";
   output: any;
 }) {
-  // special footer wording for iron
+  // special footer wording for iron sources
   const displayLabel = rateSource === "IRON" ? "Metro PHC Lesco Rate Chart" : rateSource;
 
   // oak wilt (alamo), product in mL, water in gal
@@ -141,8 +143,67 @@ function OutputBlock({
     );
   }
 
-  // arbotect and iron branches
+  // arbotect
   if ("water" in (output ?? {})) {
+    if (rateSource === "ARBOTECT") {
+      return (
+        <div>
+          <div className="text-2xl font-semibold">dbh {dbh} in</div>
+          <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
+            {output.product} oz of Arbotect, water {output.water} gal
+          </div>
+          <div className="mt-2 text-sm text-neutral-600">{displayLabel}</div>
+        </div>
+      );
+    }
+    // iron
+    if (rateSource === "IRON") {
+      return (
+        <div>
+          <div className="text-2xl font-semibold">dbh {dbh} in</div>
+          <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
+            {output.product} oz of Iron, water {output.water} gal
+          </div>
+          <div className="mt-2 text-sm text-neutral-600">{displayLabel}</div>
+        </div>
+      );
+    }
+  }
+
+  // tree iv fallback
+  return (
+    <div>
+      <div className="text-2xl font-semibold">dbh {dbh} in</div>
+      <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
+        {output.product} {output.units}
+      </div>
+      <div className="mt-2 text-sm text-neutral-600">{displayLabel}</div>
+    </div>
+  );
+}
+: {
+  dbh: number;
+  rateSource: "TREE IV" | "ARBOTECT" | "IRON" | "ALAMO" | "ALAMO";
+  output: any;
+}) {
+      // Oak Wilt (Alamo) mL display
+  if (rateSource === "ALAMO" && output.productLow != null && output.productHigh != null) {
+    const low = output.productLow;
+    const high = output.productHigh;
+    const water = output.water ?? 0;
+    const footer = "Alamo Fungicide - Propiconazole 14.3%";
+    return (
+      <div>
+        <div className="text-2xl font-semibold">dbh {dbh} in</div>
+        <div className="mt-3 text-2xl text-[color:#1F4D33] font-semibold">
+          {low} mL ({high} mL HIGH), Water {water} gal
+        </div>
+        <div className="mt-2 text-sm text-neutral-600">{footer}</div>
+      </div>
+    );
+  }
+const displayLabel = rateSource === "IRON" ? "Metro PHC Lesco Rate Chart" : rateSource;
+if ("water" in output) {
     if (rateSource === "ARBOTECT") {
       return (
         <div>
@@ -166,8 +227,6 @@ function OutputBlock({
       );
     }
   }
-
-  // tree iv fallback
   return (
     <div>
       <div className="text-2xl font-semibold">dbh {dbh} in</div>
